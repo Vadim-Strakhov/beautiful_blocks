@@ -1,0 +1,14 @@
+@media (max-width: 992px) {
+  .block {
+    &__right {
+      grid-template: repeat(auto-fit, minmax(200px, auto)) / repeat(2, 1fr);
+    }
+  }
+}
+@media (max-width: 768px) {
+  .block {
+    &__right {
+      grid-template: repeat(auto-fit, minmax(200px, auto)) / repeat(1, 1fr);
+    }
+  }
+}

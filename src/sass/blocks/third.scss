@@ -1,0 +1,86 @@
+.third {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+.block {
+  &__left {
+    background-color: #444;
+    color: white;
+    padding: 50px 40px;
+    display: grid;
+    grid-template-rows: auto 1fr;
+  }
+  &__right {
+    display: grid;
+    grid-template: repeat(auto-fit, minmax(200px, auto)) / repeat(3, 1fr);
+    padding: 60px;
+    gap: 100px 60px;
+    align-content: center;
+    justify-items: center;
+  }
+}
+
+.promo-heading {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 10px;
+}
+
+.promo-content {
+  display: grid;
+  align-content: end;
+  border-left: 3px solid #ddd;
+  padding-left: 30px;
+  margin-top: 60px;
+}
+.promo-text {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-size: 14px;
+}
+.promo-description {
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 1em;
+  opacity: 0.8;
+}
+
+.card {
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  max-width: 250px;
+}
+.card__img {
+  $deg: 30deg;
+  width: 86px;
+  height: 100px;
+  background-color: #333;
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+  transform: rotate($deg);
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  & svg {
+    transform: rotate(-$deg);
+    color: white;
+    width: 30%;
+    height: 30%;
+    & path {
+      fill: white;
+    }
+  }
+}
+.card__title {
+  margin: 16px 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 3px;
+  color: #777;
+}
+.card__desc {
+  font-size: 13px;
+  line-height: 1em;
+  letter-spacing: 2px;
+}

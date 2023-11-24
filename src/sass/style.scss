@@ -1,0 +1,17 @@
+@import 'libs/normalize';
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@import 'blocks/first';
+
+@import 'blocks/second';
+@import 'media/second_media';
+
+@import 'blocks/third';
+@import 'media/third_media';
+
+@import 'blocks/fourth';
+@import 'blocks/fifth';

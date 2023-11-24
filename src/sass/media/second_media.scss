@@ -1,0 +1,28 @@
+@media (max-height: 992px) {
+  .line {
+    transform: rotate(-28deg);
+  }
+}
+
+@media (max-height: 868px) {
+  .line {
+    transform: rotate(-31deg);
+  }
+}
+
+@media (max-height: 768px) {
+  .line {
+    transform: rotate(-36deg);
+  }
+}
+
+@media (max-width: 576px) {
+  .second {
+    & > div {
+      width: 605px;
+    }
+  }
+  .line {
+    display: none;
+  }
+}

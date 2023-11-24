@@ -1,0 +1,114 @@
+.fourth {
+  min-height: 100vh;
+  padding: 115px 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  &__left {
+    padding: 5px 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    & > div {
+      &:first-child {
+        justify-self: end;
+        text-align: right;
+        & .text-event {
+          border-right: 3px solid #777;
+          padding-right: 20px;
+        }
+      }
+    }
+    .square {
+      $deg: 45deg;
+      $size: 23vw;
+      position: relative;
+      width: $size;
+      height: $size;
+      background-color: #444;
+      transform: rotate($deg);
+      margin-bottom: 7vw;
+      margin-top: 15vw;
+      top: -6vw;
+      box-shadow: 0 4vw 8vw rgba(0, 0, 0, 0.4);
+      &::before {
+        content: '';
+        position: absolute;
+        top: 10%;
+        left: -10%;
+        bottom: 10%;
+        width: 3px;
+        background-color: #444;
+      }
+      &:last-child {
+        top: 0;
+        margin-bottom: 0;
+        &::before {
+          left: initial;
+          right: -10%;
+        }
+      }
+      &__bg-wrap {
+        height: 100%;
+        overflow: hidden;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        .img {
+          height: 140%;
+          width: 140%;
+          transform: rotate(-$deg);
+          &.right {
+            background: url('../img/1.jpg') (center/cover) no-repeat;
+          }
+          &.left {
+            background: url('../img/2.jpg') (center/cover) no-repeat;
+          }
+        }
+      }
+    }
+    .text-event {
+      font-size: 14px;
+      max-width: 200px;
+      &:first-child {
+        border-left: 3px solid #777;
+        padding-left: 20px;
+      }
+      &:last-child {
+        margin-left: auto;
+      }
+    }
+  }
+  &__right {
+    text-align: right;
+    padding: 100px 60px;
+    text-transform: uppercase;
+    display: grid;
+    grid-auto-rows: 1fr;
+    align-content: space-around;
+    justify-items: end;
+  }
+}
+
+.hero {
+  &__heading {
+    letter-spacing: 10px;
+    color: #333;
+  }
+  &__subheading {
+    margin: 0 0 60px;
+    font-size: 20px;
+    letter-spacing: 6px;
+    color: #666;
+  }
+  &__text {
+    text-transform: none;
+    font-size: 14px;
+    max-width: 200px;
+    display: inline-block;
+    letter-spacing: 1px;
+  }
+  &__line {
+    width: 3px;
+    background-color: #444;
+  }
+}
