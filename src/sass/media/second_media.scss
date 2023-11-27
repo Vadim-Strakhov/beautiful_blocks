@@ -16,7 +16,22 @@
   }
 }
 
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+  .second {
+    & > div {
+      &:nth-child(2) {
+        padding: 0 125px;
+      }
+    }
+  }
+}
+
 @media (max-width: 576px) {
+  html {
+    font-size: 14px;
+  }
   .second {
     & > div {
       width: 605px;
@@ -25,4 +40,19 @@
   .line {
     display: none;
   }
+  .featured-header {
+    max-width: 200px;
+    & span:last-child {
+      margin-left: 15px;
+    }
+  }
+  .ladder {
+    margin-left: 45px;
+    padding-right: 5px;
+  }
+  .featured-subheader {
+    padding-right: 120px;
+  }
+}
+@media (max-width: 360px) {
 }

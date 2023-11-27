@@ -12,3 +12,13 @@
     }
   }
 }
+@media (max-width: 576px) {
+  .block__left {
+    padding: 10px 10px;
+  }
+  .block__right {
+    padding: 10px;
+  }
+}
+@media (max-width: 360px) {
+}
