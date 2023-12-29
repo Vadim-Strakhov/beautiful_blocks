@@ -1,0 +1,41 @@
+.sixth {
+  overflow: hidden;
+  height: 100vh;
+  background: url(../img/city.jpg) center / cover;
+  position: relative;
+}
+
+.text {
+  position: absolute;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%) scale(1);
+  background-color: white;
+  color: black;
+  font-size: 8vw;
+  font-weight: bold;
+  mix-blend-mode: screen;
+  text-transform: uppercase;
+  transition: 5s;
+  //   backdrop-filter: brightness(0%);
+  //   animation: animate 4s infinite alternate;
+  &:hover {
+    transform: translate(-50%, -50%) scale(100);
+    // backdrop-filter: brightness(100%);
+  }
+}
+
+@keyframes animate {
+  from {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  to {
+    transform: translate(-50%, -50%) scale(50);
+    backdrop-filter: brightness(100%);
+  }
+}

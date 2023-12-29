@@ -9,6 +9,9 @@
   },
   "author": "Vadim-Strakhov",
   "license": "ISC",
+  "browserslist": [
+    ">1% and not dead"
+  ],
   "devDependencies": {
     "browser-sync": "^2.29.3",
     "gh-pages": "^6.1.0",

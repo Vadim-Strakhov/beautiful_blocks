@@ -1,20 +1,24 @@
-@import 'libs/normalize';
+@import "libs/normalize";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500;1000&display=swap");
 
 * {
   margin: 0;
   box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
 }
 
-@import 'blocks/first';
+@import "blocks/01_first";
 
-@import 'blocks/second';
-@import 'media/second_media';
+@import "blocks/02_second";
+@import "media/02_second_media";
 
-@import 'blocks/third';
-@import 'media/third_media';
+@import "blocks/03_third";
+@import "media/03_third_media";
 
-@import 'blocks/fourth';
-@import 'media/fourth_media';
+@import "blocks/04_fourth";
+@import "media/04_fourth_media";
 
-@import 'blocks/fifth';
-@import 'media/fifth_media.scss';
+@import "blocks/05_fifth";
+@import "media/05_fifth_media.scss";
+
+@import "blocks/06_sixth";
